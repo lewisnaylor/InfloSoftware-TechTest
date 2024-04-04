@@ -18,6 +18,7 @@
 * Clicking into a user and viewing the actions will show only the actions against that respective user.
 
 ## Expert
-* I refactored most of the code base into a feature slice architecture using MediatR.
+* I refactored most of the code base into a feature slice architecture.
+* There is now a UserManagement API project which handles all the calls into the database, and uses MediatR to handle the requests. 
 * Each action that is executed in the front end is seperated into it's own 'Slice' and it completes that action and returns the result.
 * The front end has been changed into a Vue application. 
